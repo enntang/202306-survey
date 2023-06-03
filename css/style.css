@@ -12,21 +12,29 @@ body {
     display: flex;
     flex-direction: row;
 }
+
 .col {
     display: flex;
     flex-direction: column;
 }
-.w-100{
-    width:100%
+
+.w-100 {
+    width: 100%
 }
-.pb-12{
+
+.pb-12 {
     padding-bottom: 12px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
 }
 
 button,
 label,
 input[type=submit],
-input[type=radio] {
+input[type=radio],
+input[type=button] {
     cursor: pointer;
     transition: 0.3s;
 }
@@ -34,7 +42,8 @@ input[type=radio] {
 button:hover,
 label:hover,
 input[type=submit]:hover,
-input[type=radio]:hover {
+input[type=radio]:hover,
+input[type=button]:hover {
     opacity: 0.8;
     transition: 0.3s;
 }
@@ -137,6 +146,12 @@ div.main-content {
     justify-items: center;
 }
 
+div.main-content p {
+    font-size: 16px;
+    color: #343A40;
+    line-height: 1.5;
+}
+
 div.question {
     padding-top: 20px;
     display: flex;
@@ -152,6 +167,7 @@ div.question h2 {
     color: #2075F3;
     margin-top: 20px;
     margin-bottom: 12px;
+    line-height: 1.4;
 }
 
 div.question p {
@@ -177,18 +193,18 @@ div.question button span {
     height: 24px;
 }
 
-div.answer-group {
+.answer-group {
     width: 90%;
 }
 
-/* div.answer-group div {
+/* .answer-group div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
 } */
 
-div.answer-group form {
+.answer-group form {
     display: flex;
     /* flex-direction: column; */
     align-items: center;
@@ -199,12 +215,12 @@ div.answer-group form {
 }
 
 
-/* div.answer-group form div {
+/* .answer-group form div {
     flex-direction: row;
     width: 100%;
 } */
 
-div.answer-group form label {
+.answer-group form label {
     padding: 10px;
     background-color: white;
     color: #343A40;
@@ -219,50 +235,64 @@ div.answer-group form label {
 }
 
 
-div.answer-group form label:last-child {
+.answer-group form label:last-child {
     margin-right: 0;
 }
 
 
 
-div.answer-group form label.basic-radio {
+.answer-group form label.basic-radio {
     height: 102px;
 }
 
-div.answer-group form label.rating-radio {
+.answer-group form label.rating-radio {
     height: 50px;
 }
 
-div.answer-group form label input {
+.answer-group form label input {
     margin-bottom: 10px;
     height: 20px;
 }
 
-div.answer-group .discription {
+.answer-group .discription {
     margin: -16px 0 60px 0;
     padding: 0 30px;
 }
 
-div.answer-group .discription span {
+.answer-group .discription span {
     flex: auto;
     text-align: center;
     color: #343A40;
 }
 
-div.answer-group .discription span:first-child {
+.answer-group .discription span:first-child {
     text-align: left;
 }
 
-div.answer-group .discription span:last-child {
+.answer-group .discription span:last-child {
     text-align: right;
 }
 
-div.feature-group {
+.answer-group textarea, .answer-group input[type=text] {
+    width:100%;
+    padding: 10px;
+    background-color: white;
+    color: #343A40;
+    border: solid 1px #DDE3E9;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.answer-group textarea::placeholder, .answer-group input[type=text]::placeholder{
+    color:#A3A9AE;
+}
+
+.feature-group {
     width: 90%;
     margin-bottom: 30px;
 }
 
-div.feature-group .item {
+.feature-group .item {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -270,15 +300,14 @@ div.feature-group .item {
     position: relative;
 }
 
-div.feature-group .item img {
+.feature-group .item img {
     width: 70%;
     height: 70%;
 }
 
-div.feature-group .item p {
+.feature-group .item p {
     position: absolute;
-    bottom: 5%;
-    right: 10%;
+
     padding: 30px;
     border-radius: 8px;
     background-color: white;
@@ -287,13 +316,24 @@ div.feature-group .item p {
     font-size: 22px;
 }
 
-div.feature-group .owl-carousel {
+.feature-group .item p.right {
+    bottom: 5%;
+    right: 10%;
+}
+
+.feature-group .item p.left {
+    bottom: 5%;
+    left: 10%;
+}
+
+.feature-group .owl-carousel {
     position: relative;
 }
 
 /* The Lightbox Modal (background) */
 .lightboxModal,
-.ratingModal {
+.ratingModal,
+.dialogModal {
     z-index: 20;
     display: none;
     position: fixed;
@@ -307,7 +347,7 @@ div.feature-group .owl-carousel {
     align-items: center;
 }
 
-.lightboxModal {
+.lightboxModal, .dialogModal {
     overflow: auto;
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
@@ -320,7 +360,8 @@ div.feature-group .owl-carousel {
 }
 
 .lightboxModal .content,
-.ratingModal .content {
+.ratingModal .content,
+.dialogModal .content {
     width: 100%;
     display: flex;
     flex-direction: column;

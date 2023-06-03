@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>升學王上課平台改版意見調查</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="background-image: url(img/background.png);">
+    <div class="header">
+        <span style="color: #A3A9AE;">作答進度</span>
+        <div class="progress-bar">
+            <div style="width:100%;"></div>
+        </div>
+        <span>完成！</span>
+    </div>
+    <div class="main-content">
+        <div class="question">
+            <img src="img/icon/heart.svg">
+            <h2>問卷填寫完成</h2>
+            <p>感謝您的耐心作答</p>
+        </div>
+        
+        <input onclick="window.close();" value="關閉視窗" type="button" class="btn-primary">
+    </div>
+    <!-- dialogModal start-->
+    <div id="lightboxModal" class="lightboxModal">
+        <div class="content">
+            <div style="background-color: white; border-radius: 20px; padding: 20px;">
+                <h3>您尚未填寫聯絡資料</h3>
+                <p>未填寫完整資料將無法接收好禮，<br>
+                    確定送出問卷嗎？</p>
+                <div class="row">
+                    <button class="btn-secondary">重新填寫</button>
+                    <button class="btn-primary">確認送出</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- dialogModal end-->
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

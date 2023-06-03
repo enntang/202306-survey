@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 <head>
+    <!-- <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <div w3-include-html="include/head.html"></div> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,42 +34,60 @@
     <div class="header">
         <span style="color: #A3A9AE;">作答進度</span>
         <div class="progress-bar">
-            <div style="width:0%;"></div>
+            <div style="width:72%;"></div>
         </div>
-        <span>問題</span><span>1/11</span>
+        <span>問題</span><span>9/11</span>
     </div>
     <div class="main-content">
         <div class="question">
             <img src="img/icon/question.svg">
-            <h2>請問您的身份是...</h2>
+            <h2>若您或您的孩子/學生曾使用過升學王升學平台，<br>
+                滿意度為？</h2>
         </div>
         <div class="answer-group">
-            <form class="col" action="">
-                <div class="row w-100 pb-12">
-                    <label for="student" class="basic-radio">
-                        <input type="radio" id="student" value="1" name="state">
-                        <span class="checkmark">學生</span>
-                    </label>
-                    <label for="parents" class="basic-radio">
-                        <input type="radio" id="parents" value="2" name="state">
-                        <span class="checkmark">家長</span>
-                    </label>
-                </div>
-                <div class="row w-100">
-                    <label for="teacher" class="basic-radio">
-                        <input type="radio" id="teacher" value="3" name="state">
-                        <span class="checkmark">老師</span>
-                    </label>
-                    <label for="other" class="basic-radio">
-                        <input type="radio" id="other" value="4" name="state" checked>
-                        <span class="checkmark">其他</span>
-                    </label>
-                </div>
+            <form class="row" action="">
+                <label for="rate-1" class="rating-radio">
+                    <input type="radio" id="rate-1" value="1" name="rate">
+                    <span class="checkmark">1</span>
+                </label>
+                <label for="rate-2" class="rating-radio">
+                    <input type="radio" id="rate-2" value="2" name="rate">
+                    <span class="checkmark">2</span>
+                </label>
+                <label for="rate-3" class="rating-radio">
+                    <input type="radio" id="rate-3" value="3" name="rate">
+                    <span class="checkmark">3</span>
+                </label>
+                <label for="rate-4" class="rating-radio">
+                    <input type="radio" id="rate-4" value="4" name="rate">
+                    <span class="checkmark">4</span>
+                </label>
+                <label for="rate-5" class="rating-radio">
+                    <input type="radio" id="rate-5" value="5" name="rate">
+                    <span class="checkmark">5</span>
+                </label>
+                <label for="rate-6" class="rating-radio">
+                    <input type="radio" id="rate-6" value="6" name="rate">
+                    <span class="checkmark">6</span>
+                </label>
+                <label for="rate-7" class="rating-radio">
+                    <input type="radio" id="rate-7" value="7" name="rate" checked>
+                    <span class="checkmark">7</span>
+                </label>
+            </form>
+            <div class="discription row">
+                <span>不喜歡</span>
+                <span>無所謂</span>
+                <span>好極了！</span>
+            </div>
         </div>
         <input class="btn-primary" type="submit" value="確認">
         </form>
     </div>
-
+    <!-- Optional JavaScript -->
+    <!-- <script>
+        w3.includeHTML();
+    </script> -->
 </body>
 
 </html>

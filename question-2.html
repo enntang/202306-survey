@@ -23,8 +23,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-
+<body style="background-image: url(img/background.png);">
     <nav class="navigation">
         <button style="margin-right:8px">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +43,7 @@
     <div class="header">
         <span style="color: #A3A9AE;">作答進度</span>
         <div class="progress-bar">
-            <div style="width:18%;"></div>
+            <div style="width:9%;"></div>
         </div>
         <span>問題</span><span>2/11</span>
     </div>
@@ -59,11 +58,13 @@
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <img src="./img/2-1.png">
-                    <p class="animate__animated animate__pulse animate__slow animate__infinite">清爽不失簡約的色調，降低學習壓力</p>
+                    <p class="right animate__animated animate__pulse animate__slow animate__infinite">清爽不失簡約的色調，降低學習壓力
+                    </p>
                 </div>
                 <div class="item">
                     <img src="./img/2-2.png">
-                    <p class="animate__animated animate__pulse animate__slow animate__infinite">主要功能用清晰的色塊列出，一目瞭然</p>
+                    <p class="right animate__animated animate__pulse animate__slow animate__infinite">主要功能用清晰的色塊列出，一目瞭然
+                    </p>
                 </div>
             </div>
         </div>
@@ -84,7 +85,7 @@
         <div class="content">
             <p>我覺得這個改變...</p>
             <div class="answer-group">
-                <form class="row">
+                <form class="row" action="">
                     <label for="rate-1" class="rating-radio">
                         <input type="radio" id="rate-1" value="1" name="rate">
                         <span class="checkmark">1</span>
@@ -126,65 +127,12 @@
             </div>
         </div>
     </div>
-    <!-- ratingModal end-->
+<!-- ratingModal end-->
+    <script src="js/carousel.js"></script>
+    <script src="js/modal.js"></script>
 </body>
-<script>
-    // Get the modal
-    var modal = document.getElementById("lightboxModal");
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var trigger = document.getElementById("lightboxmodalTrigger");
-    trigger.onclick = function () {
-        modal.style.display = "flex";
-    }
 
-    var closeModal = document.getElementById("closeModal");
 
-    lightboxModal.onclick = function () {
-        modal.style.display = "none";
-    }
-    closeModal.onclick = function () {
-        modal.style.display = "none";
-    }
-</script>
-<script>
-    // Get the modal
-    var ratingModal = document.getElementById("ratingModal");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var trigger2 = document.getElementById("ratingmodalTrigger");
-    trigger2.onclick = function () {
-        ratingModal.style.display = "flex";
-    }
-
-    var closeModal = document.getElementById("closeratingModal");
-    
-
-    closeModal.onclick = function () {
-        ratingModal.style.display = "none";
-    }
-</script>
-<script>
-    $(".owl-carousel").owlCarousel({
-        loop: true, // 循環播放
-        margin: 10,
-        autoplay: false,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        margin: 10, // 外距 10px
-        nav: false,
-        responsive: {
-            0: {
-                items: 1 // 螢幕大小為 0~600 顯示 1 個項目
-            },
-            600: {
-                items: 1 // 螢幕大小為 600~1000 顯示 3 個項目
-            },
-            1000: {
-                items: 1 // 螢幕大小為 1000 以上 顯示 5 個項目
-            }
-        }
-    });
-</script>
 
 </html>
