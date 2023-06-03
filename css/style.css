@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     background-image: url(img/background.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: 100%;
     position: relative;
     background-attachment: fixed;
@@ -79,6 +79,43 @@ input[type=button]:hover {
     width: 120px;
 }
 
+/*----- index -----*/
+.index-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 40px 0px;
+    position: relative;
+}
+.index-content h2{
+    font-size: 16px;
+    margin-bottom: 20px;
+    color:white;
+}
+.index-content ul{
+width: 50%;
+margin-bottom: 30px;
+}
+
+.index-content li{
+    color:white;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.index-content p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #343A40;
+    text-align: center;
+}
+
+.index-content p span {
+    color: #2075F3;
+    font-size: 20px;
+}
+
+/*----- main section -----*/
 nav {
     position: fixed;
     bottom: 30px;
@@ -133,8 +170,11 @@ div.header {
 div.header span {
     color: #2075F3;
 }
+
 @media (max-width: 450px) {
-    div.header span:first-child{display: none;}
+    div.header span:first-child {
+        display: none;
+    }
 }
 
 div.progress-bar {
@@ -144,8 +184,11 @@ div.progress-bar {
     background-color: #E9ECEF;
     border-radius: 5px;
 }
+
 @media (max-width: 450px) {
-    div.progress-bar{order:1}
+    div.progress-bar {
+        order: 1
+    }
 }
 
 div.progress-bar div {
@@ -165,6 +208,7 @@ div.main-content {
     align-items: center;
     justify-items: center;
 }
+
 @media (max-width: 450px) {
     div.main-content {
         padding: 20px 10px;
@@ -184,8 +228,11 @@ div.question {
     align-items: center;
     justify-items: center;
 }
+
 @media (max-width: 450px) {
-    div.question {padding-bottom: 20px;}
+    div.question {
+        padding-bottom: 20px;
+    }
 }
 
 div.question h2 {
@@ -197,8 +244,9 @@ div.question h2 {
     margin-bottom: 12px;
     line-height: 1.4;
 }
+
 @media (max-width: 450px) {
-    div.question h2  {
+    div.question h2 {
         font-size: 24px;
     }
 }
@@ -230,6 +278,7 @@ div.question button span {
 .answer-group {
     width: 90%;
 }
+
 @media (max-width: 450px) {
     .answer-group {
         width: 100%;
@@ -257,12 +306,16 @@ div.question button span {
     flex-direction: column;
     align-items: center;
 }
+
 @media (max-width: 450px) {
     .answer-group form label {
         padding: 6px;
         margin-right: 6px;
     }
-    .answer-group form {padding:0 12px;}
+
+    .answer-group form {
+        padding: 0 12px;
+    }
 }
 
 
@@ -284,11 +337,13 @@ div.question button span {
     margin-bottom: 10px;
     height: 20px;
 }
+
 @media (max-width: 450px) {
     .answer-group form label input {
         margin-bottom: 2px;
     }
 }
+
 .answer-group .discription {
     margin: -16px 0 60px 0;
     padding: 0 30px;
@@ -352,11 +407,12 @@ div.question button span {
     align-items: center;
     position: relative;
 }
+
 @media (max-width: 450px) {
     .feature-group .item {
         min-height: 320px;
     }
-  }
+}
 
 .feature-group .item img {
     width: 70%;
@@ -378,7 +434,7 @@ div.question button span {
     right: 10%;
 }
 
-@media (min-width: 451px) and (max-width: 991px) {
+/* @media (min-width: 451px) and (max-width: 991px) {
     .feature-group .item p.right,
     .feature-group .item p.left {
         padding: 16px;
@@ -387,8 +443,9 @@ div.question button span {
         width: 100%;
         height: 100%;
     }
-  }
-@media (max-width: 450px) {
+  } */
+@media (max-width: 767px) {
+
     .feature-group .item p.right,
     .feature-group .item p.left {
         padding: 16px;
@@ -397,11 +454,12 @@ div.question button span {
         right: 0;
         font-size: 18px;
     }
+
     .feature-group .item img {
         width: 100%;
-   
+
     }
-  }
+}
 
 .feature-group .item p.left {
     bottom: 5%;
@@ -474,11 +532,13 @@ div.question button span {
     width: 70%;
     border-radius: 20px;
 }
+
 @media (min-width: 451px) and (max-width: 768px) {
     .lightboxModal .content img {
         width: 92%;
     }
-  }
+}
+
 @media (max-width: 450px) {
     .lightboxModal .content img {
         width: 92%;
@@ -506,6 +566,3 @@ div.question button span {
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
