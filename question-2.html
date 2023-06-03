@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
     <meta charset="UTF-8">
@@ -52,7 +52,8 @@
         <div class="question">
             <h2>首頁變清楚了！</h2>
             <p>改為較為明亮、活潑的主色調</p>
-            <button id="modalTrigger"><span style="margin-right: 4px;"><img src="img/icon/zoom.svg"></span>舊版畫面</button>
+            <button id="lightboxmodalTrigger"><span style="margin-right: 4px;"><img
+                        src="img/icon/zoom.svg"></span>舊版畫面</button>
         </div>
         <div class="feature-group">
             <div class="owl-carousel owl-theme">
@@ -66,37 +67,101 @@
                 </div>
             </div>
         </div>
-        <input type="submit" value="評分">
+        <input id="ratingmodalTrigger" class="btn-primary" type="submit" value="評分">
         </form>
     </div>
+    <!-- lightboxmodal start-->
     <div id="lightboxModal" class="lightboxModal">
-
-        <span class="close">&times;</span>
-
-        <div class="content" id="modalContent">
+        <span class="close" id="closeModal">&times;</span>
+        <div class="content">
             <h2>首頁</h2>
             <img src="./img/2-old.png">
         </div>
-
-
     </div>
+    <!-- lightboxmodal end-->
+    <!-- ratingModal -->
+    <div id="ratingModal" class="ratingModal">
+        <div class="content">
+            <p>我覺得這個改變...</p>
+            <div class="answer-group">
+                <form class="row">
+                    <label for="rate-1" class="rating-radio">
+                        <input type="radio" id="rate-1" value="1" name="rate">
+                        <span class="checkmark">1</span>
+                    </label>
+                    <label for="rate-2" class="rating-radio">
+                        <input type="radio" id="rate-2" value="2" name="rate">
+                        <span class="checkmark">2</span>
+                    </label>
+                    <label for="rate-3" class="rating-radio">
+                        <input type="radio" id="rate-3" value="3" name="rate">
+                        <span class="checkmark">3</span>
+                    </label>
+                    <label for="rate-4" class="rating-radio">
+                        <input type="radio" id="rate-4" value="4" name="rate">
+                        <span class="checkmark">4</span>
+                    </label>
+                    <label for="rate-5" class="rating-radio">
+                        <input type="radio" id="rate-5" value="5" name="rate">
+                        <span class="checkmark">5</span>
+                    </label>
+                    <label for="rate-6" class="rating-radio">
+                        <input type="radio" id="rate-6" value="6" name="rate">
+                        <span class="checkmark">6</span>
+                    </label>
+                    <label for="rate-7" class="rating-radio">
+                        <input type="radio" id="rate-7" value="7" name="rate" checked>
+                        <span class="checkmark">7</span>
+                    </label>
+                </form>
+                <div class="discription row">
+                    <span>不喜歡</span>
+                    <span>無所謂</span>
+                    <span>好極了！</span>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn-secondary" style="margin-right:10px" id="closeratingModal">回頭確認</button>
+                <input class="btn-primary" type="submit" value="下一題">
+            </div>
+        </div>
+    </div>
+    <!-- ratingModal end-->
 </body>
 <script>
     // Get the modal
     var modal = document.getElementById("lightboxModal");
 
     // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var trigger = document.getElementById("modalTrigger");
+    var trigger = document.getElementById("lightboxmodalTrigger");
     trigger.onclick = function () {
-        modal.style.display = "block";
+        modal.style.display = "flex";
     }
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var closeModal = document.getElementById("closeModal");
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
+    lightboxModal.onclick = function () {
         modal.style.display = "none";
+    }
+    closeModal.onclick = function () {
+        modal.style.display = "none";
+    }
+</script>
+<script>
+    // Get the modal
+    var ratingModal = document.getElementById("ratingModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var trigger2 = document.getElementById("ratingmodalTrigger");
+    trigger2.onclick = function () {
+        ratingModal.style.display = "flex";
+    }
+
+    var closeModal = document.getElementById("closeratingModal");
+    
+
+    closeModal.onclick = function () {
+        ratingModal.style.display = "none";
     }
 </script>
 <script>

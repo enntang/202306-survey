@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
+    <!-- <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <div w3-include-html="include/head.html"></div> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>升學王上課平台改版意見調查</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,9 +46,9 @@
             <h2>請問您的身份是...</h2>
         </div>
         <div class="answer-group">
-            <form>
-                <div style="padding-bottom: 12px;">
-                    <label for="student" class="basic-radio" style="margin-right:10px">
+            <form class="col">
+                <div class="row w-100 pb-12">
+                    <label for="student" class="basic-radio">
                         <input type="radio" id="student" value="1" name="state">
                         <span class="checkmark">學生</span>
                     </label>
@@ -55,8 +57,8 @@
                         <span class="checkmark">家長</span>
                     </label>
                 </div>
-                <div>
-                    <label for="teacher" class="basic-radio" style="margin-right:10px">
+                <div class="row w-100">
+                    <label for="teacher" class="basic-radio">
                         <input type="radio" id="teacher" value="3" name="state">
                         <span class="checkmark">老師</span>
                     </label>
@@ -65,11 +67,14 @@
                         <span class="checkmark">其他</span>
                     </label>
                 </div>
-
         </div>
-        <input type="submit" value="確認">
+        <input class="btn-primary" type="submit" value="確認">
         </form>
     </div>
+    <!-- Optional JavaScript -->
+    <!-- <script>
+        w3.includeHTML();
+    </script> -->
 </body>
 
 </html>
