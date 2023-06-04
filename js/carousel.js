@@ -1,7 +1,7 @@
 $(".owl-carousel").owlCarousel({
     loop: true, // 循環播放
     margin: 10,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
     margin: 10, // 外距 10px
