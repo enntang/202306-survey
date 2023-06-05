@@ -95,6 +95,15 @@ input[type=button]:hover {
     padding: 40px 0px;
     position: relative;
 }
+.index-content img{
+    width:70%;
+    margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+    .index-content img{
+        width:100%;
+    }
+}
 .index-content h2{
     font-size: 16px;
     margin-bottom: 20px;
