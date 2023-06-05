@@ -9,14 +9,15 @@
     <title>升學王上課平台改版意見調查</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/check_animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
-<link rel="manifest" href="./img/favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon_io/site.webmanifest">
 </head>
 
 <body style="background-image: url(img/background.png);">
@@ -29,11 +30,18 @@
     </div>
     <div class="main-content">
         <div class="question mt-30">
-            <img src="img/icon/heart.svg">
-            <h2>問卷填寫完成</h2>
+            <div class="success-checkmark">
+                <div class="check-icon">
+                    <span class="icon-line line-tip"></span>
+                    <span class="icon-line line-long"></span>
+                    <div class="icon-circle"></div>
+                    <div class="icon-fix"></div>
+                </div>
+            </div>
+            <h2 style="margin-top:0">問卷填寫完成</h2>
             <p class="mb-30">感謝您的耐心作答，專屬禮物將由專人聯繫送達</p>
         </div>
-        
+
         <input onclick="window.close();" value="關閉視窗" type="button" class="btn-primary">
     </div>
     <!-- dialogModal start-->
