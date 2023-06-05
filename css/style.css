@@ -249,15 +249,15 @@ div.main-content {
     justify-items: center;
 }
 
-@media (min-width: 451px) and (max-width: 768px) {
+/* @media (min-width: 451px) and (max-width: 768px) {
     div.main-content {
         padding: 20px 60px;
     }
-}
+} */
 
-@media (max-width: 450px) {
+@media (max-width: 767px) {
     div.main-content {
-        padding: 20px 10px;
+        padding: 30px 10px;
     }
 }
 
@@ -534,7 +534,7 @@ div.question button span {
     z-index: 20;
     display: none;
     position: fixed;
-    padding-top: 30vh;
+    padding-top: 15vh;
     left: 0;
     top: 0;
     width: 100%;
