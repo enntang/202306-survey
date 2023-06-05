@@ -25,11 +25,12 @@ body {
 .mr-10 {
     margin-right: 10px;
 }
-.mb-10{
+
+.mb-10 {
     margin-bottom: 10px;
 }
 
-.mb-30{
+.mb-30 {
     margin-bottom: 30px;
 }
 
@@ -95,20 +96,41 @@ input[type=button]:hover {
     padding: 40px 0px;
     position: relative;
 }
-.index-content h2{
-    font-size: 16px;
-    margin-bottom: 20px;
-    color:white;
-}
-.index-content ul{
-width: 50%;
-margin-bottom: 30px;
+
+.index-content img {
+    width: 70%;
+    margin-bottom: 40px;
 }
 
-.index-content li{
-    color:white;
+
+.index-content h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.index-content ul {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.index-content li {
+    color: white;
     font-size: 14px;
     line-height: 1.4;
+    font-weight: 300;
+}
+@media (max-width: 767px) {
+    .index-content {
+        padding: 40px 10px;
+    }
+    .index-content img {
+        width: 100%;
+    }
+    .index-content ul {
+        width: 90%;
+        margin-bottom: 30px;
+    }
 }
 .index-content p {
     font-size: 16px;
@@ -221,6 +243,7 @@ div.main-content {
         padding: 20px 60px;
     }
 }
+
 @media (max-width: 450px) {
     div.main-content {
         padding: 20px 10px;
@@ -304,11 +327,13 @@ div.question button span {
     margin: 30px 0;
     padding: 0 30px;
 }
+
 @media (min-width: 451px) and (max-width: 768px) {
     .answer-group form {
         padding: 0;
     }
 }
+
 @media (max-width: 450px) {
     .answer-group form {
         padding: 0;
