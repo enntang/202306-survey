@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>升學王上課平台改版意見調查</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/radio.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +46,25 @@
             <img src="img/icon/question.svg">
             <h2>您或您的孩子/學生是否使用過升學王？</h2>
         </div>
-        <div class="answer-group">
+        <div class="radio-group w-100">
+            <div class="radio">
+                <label for="yes" class="radio-wrapper">
+                    <input type="radio" id="yes" value="1" name="state" class="radio-input" checked/>
+                    <span class="radio-tile">
+                        <span class="radio-label">學生</span>
+                    </span>
+                </label>
+            </div>
+            <div class="radio">
+                <label for="no" class="radio-wrapper">
+                    <input type="radio" id="no" value="2" name="state" class="radio-input"/>
+                    <span class="radio-tile">
+                        <span class="radio-label">家長</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <!-- <div class="answer-group">
             <form class="col" action="question-9.html">
                 <div class="row w-100 pb-30">
                     <label for="yes" class="basic-radio">
@@ -61,11 +80,8 @@
                 <input class="btn-primary" type="submit" value="確認">
             </form>
         </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- <script>
-        w3.includeHTML();
-    </script> -->
+    </div> -->
+
 </body>
 
 </html>

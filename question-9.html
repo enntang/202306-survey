@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>升學王上課平台改版意見調查</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/radio.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,46 +47,76 @@
             <h2>若您或您的孩子/學生曾使用過升學王升學平台，<br>
                 滿意度為？</h2>
         </div>
-        <div class="answer-group">
-            <form class="col" action="question-10.html">
-                <div class="row w-100">
-                    <label for="rate-1" class="rating-radio">
-                        <input type="radio" id="rate-1" value="1" name="rate">
-                        <span class="checkmark">1</span>
-                    </label>
-                    <label for="rate-2" class="rating-radio">
-                        <input type="radio" id="rate-2" value="2" name="rate">
-                        <span class="checkmark">2</span>
-                    </label>
-                    <label for="rate-3" class="rating-radio">
-                        <input type="radio" id="rate-3" value="3" name="rate">
-                        <span class="checkmark">3</span>
-                    </label>
-                    <label for="rate-4" class="rating-radio">
-                        <input type="radio" id="rate-4" value="4" name="rate">
-                        <span class="checkmark">4</span>
-                    </label>
-                    <label for="rate-5" class="rating-radio">
-                        <input type="radio" id="rate-5" value="5" name="rate">
-                        <span class="checkmark">5</span>
-                    </label>
-                    <label for="rate-6" class="rating-radio">
-                        <input type="radio" id="rate-6" value="6" name="rate">
-                        <span class="checkmark">6</span>
-                    </label>
-                    <label for="rate-7" class="rating-radio">
-                        <input type="radio" id="rate-7" value="7" name="rate" checked>
-                        <span class="checkmark">7</span>
+        <form action="question-10.html">
+            <div class="radio-group score">
+                <div class="radio">
+                    <label for="rate-1" class="radio-wrapper">
+                        <input type="radio" id="rate-1" value="1" name="rate" class="radio-input" />
+                        <span class="radio-tile">
+                            <span class="radio-label">1</span>
+                        </span>
                     </label>
                 </div>
-                <div class="discription row w-100">
-                    <span>不喜歡</span>
-                    <span>無所謂</span>
-                    <span>好極了！</span>
+                <div class="radio">
+                    <label for="rate-2" class="radio-wrapper">
+                        <input type="radio" id="rate-2" value="2" name="rate" class="radio-input" />
+                        <span class="radio-tile">
+                            <span class="radio-label">2</span>
+                        </span>
+                    </label>
                 </div>
-                <input class="btn-primary" type="submit" value="確認">
-            </form>
-        </div>
+                <div class="radio">
+                    <label for="rate-3" class="radio-wrapper">
+                        <input type="radio" id="rate-3" value="3" name="rate" class="radio-input" />
+                        <span class="radio-tile">
+                            <span class="radio-label">3</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="rate-4" class="radio-wrapper">
+                        <input type="radio" id="rate-4" value="4" name="rate" class="radio-input" checked />
+                        <span class="radio-tile">
+                            <span class="radio-label">4</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="rate-5" class="radio-wrapper">
+                        <input type="radio" id="rate-5" value="5" name="rate" class="radio-input" />
+                        <span class="radio-tile">
+                            <span class="radio-label">5</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="rate-6" class="radio-wrapper">
+                        <input type="radio" id="rate-6" value="6" name="rate" class="radio-input" />
+                        <span class="radio-tile">
+                            <span class="radio-label">6</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="rate-7" class="radio-wrapper">
+                        <input type="radio" id="rate-7" value="7" name="rate" class="radio-input"  />
+                        <span class="radio-tile">
+                            <span class="radio-label">7</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="discription">
+                <span>不喜歡</span>
+                <span>無所謂</span>
+                <span>好極了！</span>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-secondary" style="margin-right:10px" id="closeratingModal">回頭確認</button>
+                <input class="btn-primary" type="submit" value="下一題">
+            </div>
         </form>
     </div>
     <!-- Optional JavaScript -->
