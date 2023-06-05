@@ -29,7 +29,9 @@ body {
 .mb-10 {
     margin-bottom: 10px;
 }
-
+.mt-30 {
+    margin-top: 30px;
+}
 .mb-30 {
     margin-bottom: 30px;
 }
@@ -86,6 +88,20 @@ input[type=button]:hover {
     border: none;
     width: 120px;
 }
+
+.btn-outline {
+    height: 36px;
+    color: #2075F3;
+    border: solid 1px #2075F3;
+    padding: 0 12px;
+    background-color: transparent;
+    border-radius: 18px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-outline span{margin-right: 4px;}
 
 /*----- index -----*/
 .index-content {
@@ -179,7 +195,7 @@ nav button:hover svg {
 
 div.header {
     z-index: 2;
-    padding: 25px 0;
+    padding: 10px 0;
     display: flex;
     background-color: white;
     position: fixed;
@@ -190,11 +206,6 @@ div.header {
     align-items: center;
 }
 
-@media (max-width: 450px) {
-    div.header {
-        padding: 10px 0;
-    }
-}
 
 div.header span {
     color: #2075F3;
@@ -228,7 +239,7 @@ div.progress-bar div {
 
 
 div.main-content {
-    padding: 80px 150px;
+    padding: 40px 150px;
     display: flex;
     margin: auto;
     text-align: center;
@@ -257,11 +268,12 @@ div.main-content p {
 }
 
 div.question {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
+
 }
 
 @media (max-width: 450px) {
@@ -287,22 +299,8 @@ div.question h2 {
 }
 
 div.question p {
-    margin: 0 0 20px 0;
+    /* margin: 0 0 20px 0; */
     color: #656C73;
-}
-
-
-div.question button {
-    height: 36px;
-    color: #2075F3;
-    border: solid 1px #2075F3;
-    padding: 0 12px;
-    background-color: transparent;
-    border-radius: 18px;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 div.question button span {
@@ -463,8 +461,18 @@ div.question button span {
 }
 
 .feature-group .item img {
-    width: 70%;
+    width: 50%;
     height: auto;
+}
+@media (min-width: 1100px) and (max-width: 1400px) {
+    .feature-group .item img {
+        width: 80%;
+    }
+}
+@media (max-width: 1099px) {
+    .feature-group .item img {
+        width: 100%;
+    }
 }
 
 .feature-group .item p {
@@ -492,20 +500,21 @@ div.question button span {
         height: 100%;
     }
   } */
-@media (max-width: 767px) {
+@media (max-width: 1099px) {
 
     .feature-group .item p.right,
-    .feature-group .item p.left {
+    .feature-group .item p.left{
         padding: 16px;
         position: inherit;
-        width: 50%;
+        width: 80%;
         right: 0;
         font-size: 18px;
+        margin-bottom: 20px;
     }
+
 
     .feature-group .item img {
         width: 100%;
-
     }
 }
 
