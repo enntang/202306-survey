@@ -127,7 +127,8 @@ input[type=button]:hover {
 
 .index-content ul {
     width: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    list-style-type: decimal;
 }
 
 .index-content li {
@@ -135,6 +136,7 @@ input[type=button]:hover {
     font-size: 14px;
     line-height: 1.4;
     font-weight: 300;
+    margin-bottom: 4px;
 }
 @media (max-width: 767px) {
     .index-content {
