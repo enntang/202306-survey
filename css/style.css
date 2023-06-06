@@ -74,7 +74,7 @@ input[type=button]:hover {
     padding: 0 20px;
     border-radius: 21px;
     border: none;
-    width: 120px;
+    min-width: 120px;
 }
 
 .btn-secondary {
@@ -86,7 +86,7 @@ input[type=button]:hover {
     border: solid 1px #2075F3 !important;
     border-radius: 21px;
     border: none;
-    width: 120px;
+    min-width: 120px;
 }
 
 .btn-outline {
@@ -116,6 +116,7 @@ input[type=button]:hover {
 .index-content img {
     width: 70%;
     margin-bottom: 40px;
+    max-width: 900px;
 }
 
 
